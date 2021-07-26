@@ -9,16 +9,16 @@ function Particle(x,y,r,fixed){
     World.add(world,this.body);
 
     this.arriba =  function () {
-        Body.applyForce( this.body, {x: this.body.position.x, y: this.body.position.y}, {x: 0, y: -0.1});
+        Body.applyForce( this.body, {x: this.body.position.x, y: this.body.position.y}, {x: 0, y: -0.05});
     }
     this.abajo =  function () {
-        Body.applyForce( this.body, {x: this.body.position.x, y: this.body.position.y}, {x: 0, y: 0.1});
+        Body.applyForce( this.body, {x: this.body.position.x, y: this.body.position.y}, {x: 0, y: 0.05});
     }
     this.izquierda =  function () {
-        Body.applyForce( this.body, {x: this.body.position.x, y: this.body.position.y}, {x: -0.1, y: 0});
+        Body.applyForce( this.body, {x: this.body.position.x, y: this.body.position.y}, {x: -0.05, y: 0});
     }
     this.derecha =  function () {
-        Body.applyForce( this.body, {x: this.body.position.x, y: this.body.position.y}, {x: 0.1, y: 0});
+        Body.applyForce( this.body, {x: this.body.position.x, y: this.body.position.y}, {x: 0.05, y: 0});
     }
 
     /*this.isOffScreen= function(){
