@@ -21,7 +21,7 @@ var mConstraint;
 function setup(){
     
     engine = Engine.create();
-    var canvas = createCanvas(1530,730);
+    var canvas = createCanvas(1480,700);
     engine.world.gravity.y = 0;
     world = engine.world;
     //Engine.run(engine);
